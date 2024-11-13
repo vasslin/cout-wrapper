@@ -1,0 +1,27 @@
+{
+    "name": "cout-wrapper",
+    "displayName": "Cout Wrapper",
+    "description": "Wraps selected text in std::cout << text << std::endl;",
+    "version": "0.0.1",
+    "publisher": "vasslin",
+    "engines": {
+        "vscode": "^1.93.1"  
+    },
+    "main": "./out/extension.js",
+    "activationEvents": [],
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.addCout",
+                "title": "Добавить std::cout"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.addCout",
+                "key": "ctrl+shift+t",
+                "when": "editorTextFocus"
+            }
+        ]
+    }
+}
